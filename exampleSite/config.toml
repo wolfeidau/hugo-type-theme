@@ -3,7 +3,7 @@ languageCode = "en-us"
 title = "Type theme"
 theme = "hugo-type-theme"
 # Enable comments by entering your Disqus shortname
-disqusShortname = "spf13"
+# disqusShortname = "spf13"
 # Add your tracking code to enable Google Analytics
 googleAnalytics = ""
 # Posts per page
@@ -32,7 +32,7 @@ themesDir = "../.."
 
 	# Set title for Hugo's opengraph template
 	title = "Type theme"
-	
+
 	[taxonomies]
 		# Use the series taxonomy to group blog posts in series. Related articles in the series
 		# will be used by Hugo's opengraph template
@@ -64,7 +64,7 @@ themesDir = "../.."
 		stackexchange = ""
 		steam = ""
 		tumblr = ""
-		twitter = ""
+		twitter = "wolfeidau"
 		wordpress = ""
 		youtube = ""
 		gitlab = ""

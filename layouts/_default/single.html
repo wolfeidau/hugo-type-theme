@@ -14,12 +14,24 @@
 
 		<section class="post-content">
 			{{ .Content }}
-
-			{{ if (not (eq .Site.DisqusShortname "")) | and (not .Params.disableComments) }}
-				<hr>
-				{{ template "_internal/disqus.html" . }}
-			{{ end }}
-
+			<h3>Feedback</h3>
+			<p>Feel free to reach out via:</p>
+			<ul>
+			{{ with .Site.Params.social.twitter -}}
+			<li>
+				<a href="https://twitter.com/{{ $.Site.Params.social.twitter }}" rel="me" title="{{ $.Site.Data.l10n.twitter }}">
+					@ me on Twitter
+				</a>
+			</li>
+			{{- end }}
+			{{ with .Site.Params.social.email -}}
+			<li>
+				<a href="mailto:{{ $.Site.Params.social.email }}" title="{{ $.Site.Data.l10n.email }}">
+					Send me an Email
+				</a>
+			</li>
+			{{- end }}
+			</ul>
 			<hr>
 			{{ partial "related" . }}
 		</section>
